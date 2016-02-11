@@ -1,0 +1,162 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// @import "compass/reset";
+@import url(https://fonts.googleapis.com/css?family=Teko:400,300);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+* {box-sizing: border-box;}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+header {
+	background-color: #fff;
+	display: block;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	nav {
+		max-width: 1170px;
+		margin: 0 auto;
+		.logo{
+			float: left;
+		}
+		ul {
+			float: right;
+			font: 16px/20px 'Titillium Web', Helvetica, Arial, sans-serif;
+			li {
+			display: inline-block;
+			vertical-align: middle;
+			padding-right: 40px;
+			opacity: .5;
+			padding-top: 23px;
+			padding-bottom: 23px;
+				&:last-child {
+					padding-right: 0;
+				}
+				&.active{
+					opacity: 1;
+					a {
+						color: #f63c3c;
+						padding-bottom: 23px;
+						border-bottom: 4px solid #f63c3c;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+h1, h2, h3 {
+	font-family: 'Teko', Helvetica, Arial, sans-serif;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-transform: uppercase;
+}
+
+p {
+	font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+}
+
+body {
+	background: #7e7a7d url(../images/background.jpg) center no-repeat fixed;
+  background-size: 100%;
+}
+
+.top_container {	
+	max-width: 1200px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 277px;
+	section {
+		margin-top: 200px;
+		text-align: center;
+		ul {
+			li {
+				display: none;
+				color: #fff;
+				h1 {
+					font-size: 120px;
+					letter-spacing: 10px;
+					font-weight: 300;
+					margin-bottom: 20px;
+				}
+				p {
+					width: 770px;
+					margin: 0 auto;
+					margin-bottom: 70px;
+					font-size: 22px;
+					line-height: 30px;
+					opacity: .7;
+				}
+				a {
+					color: #000;
+					font-family: 'Teko', Helvetica, Arial, sans-serif;
+					padding: 18px 56px;
+					background-color: #fff;
+					font-size: 20px;
+					font-weight: 400;
+					margin-bottom: 40px;
+					text-transform: uppercase;
+					letter-spacing: 3px;
+				}
+			}
+		}
+		li.active {
+			display: block;
+		}
+		nav {
+			ul {	
+				display: block;
+				margin: 0 auto;
+				li {
+					display: inline-block;
+					width: 40px;
+					height: 4px;
+					background-color: #fff;
+					opacity: .22;
+					padding-right: 10px;
+					margin-top: 100px;
+					&:last-child {
+						padding-right: 0;
+					}
+					&.active {
+						opacity: 1;
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}	
+}
+
+
+
+.projects {
+	margin: 10px;
+	background: #fff;
+	text-align: center;
+	h1 {
+		text-align: center;
+		font-family: 'Teko', Helvetica, Arial, sans-serif;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		font-size: 40px;
+	}
+	article{
+		width: 50%;
+		float: left;
+		padding: 0 10px;
+	}
+	img {
+		width: 100%;
+	}
+}
+

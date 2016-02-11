@@ -1,0 +1,181 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(https://fonts.googleapis.com/css?family=Teko:400,300);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+/* line 10, ../scss/styles.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 12, ../scss/styles.scss */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 17, ../scss/styles.scss */
+header {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+}
+/* line 24, ../scss/styles.scss */
+header nav {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* line 27, ../scss/styles.scss */
+header nav .logo {
+  float: left;
+}
+/* line 30, ../scss/styles.scss */
+header nav ul {
+  float: right;
+  font: 16px/20px 'Titillium Web', Helvetica, Arial, sans-serif;
+}
+/* line 33, ../scss/styles.scss */
+header nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 40px;
+  opacity: .5;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+/* line 40, ../scss/styles.scss */
+header nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 43, ../scss/styles.scss */
+header nav ul li.active {
+  opacity: 1;
+}
+/* line 45, ../scss/styles.scss */
+header nav ul li.active a {
+  color: #f63c3c;
+  padding-bottom: 23px;
+  border-bottom: 4px solid #f63c3c;
+}
+
+/* line 57, ../scss/styles.scss */
+h1, h2, h3 {
+  font-family: 'Teko', Helvetica, Arial, sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+
+/* line 64, ../scss/styles.scss */
+p {
+  font-family: 'Titillium Web', Helvetica, Arial, sans-serif;
+}
+
+/* line 68, ../scss/styles.scss */
+body {
+  background: #7e7a7d url(../images/background.jpg) center no-repeat fixed;
+  background-size: 100%;
+}
+
+/* line 73, ../scss/styles.scss */
+.top_container {
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 277px;
+}
+/* line 78, ../scss/styles.scss */
+.top_container section {
+  margin-top: 200px;
+  text-align: center;
+}
+/* line 82, ../scss/styles.scss */
+.top_container section ul li {
+  display: none;
+  color: #fff;
+}
+/* line 85, ../scss/styles.scss */
+.top_container section ul li h1 {
+  font-size: 120px;
+  letter-spacing: 10px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+/* line 91, ../scss/styles.scss */
+.top_container section ul li p {
+  width: 770px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  font-size: 22px;
+  line-height: 30px;
+  opacity: .7;
+}
+/* line 99, ../scss/styles.scss */
+.top_container section ul li a {
+  color: #000;
+  font-family: 'Teko', Helvetica, Arial, sans-serif;
+  padding: 18px 56px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+/* line 112, ../scss/styles.scss */
+.top_container section li.active {
+  display: block;
+}
+/* line 116, ../scss/styles.scss */
+.top_container section nav ul {
+  display: block;
+  margin: 0 auto;
+}
+/* line 119, ../scss/styles.scss */
+.top_container section nav ul li {
+  display: inline-block;
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  opacity: .22;
+  padding-right: 10px;
+  margin-top: 100px;
+}
+/* line 127, ../scss/styles.scss */
+.top_container section nav ul li:last-child {
+  padding-right: 0;
+}
+/* line 130, ../scss/styles.scss */
+.top_container section nav ul li.active {
+  opacity: 1;
+  display: inline-block;
+}
+
+/* line 142, ../scss/styles.scss */
+.projects {
+  margin: 10px;
+  background: #fff;
+  text-align: center;
+}
+/* line 146, ../scss/styles.scss */
+.projects h1 {
+  text-align: center;
+  font-family: 'Teko', Helvetica, Arial, sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 40px;
+}
+/* line 153, ../scss/styles.scss */
+.projects article {
+  width: 50%;
+  float: left;
+  padding: 0 10px;
+}
+/* line 158, ../scss/styles.scss */
+.projects img {
+  width: 100%;
+}
